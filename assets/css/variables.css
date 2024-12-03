@@ -8,7 +8,7 @@
 
   --danger-color: #EF5350; /*red*/
   --success-color: #66BB6A; /*green*/
-  --info-color: #42A5F5; /*blue*/
+  --info-color: #0074d2; /*blue*/
   --warning-color: #FFB300; /*amber*/
 
   --danger-rgb: 239, 83, 80; /*red*/
@@ -20,7 +20,7 @@
   --deep-purple-color: #7E57C2;
   --red-color: #EF5350;
   --orange-color: #FF7043;
-  --blue-color: #42A5F5;
+  --blue-color: #0074d2;
   --green-color: #66BB6A;
   --teal-color: #26A69A;
   --amber-color: #FFB300;
@@ -74,7 +74,7 @@ body[data-theme="red"]{
   
   
   body[data-theme="blue"]{
-  --primary-color: #42A5F5; /*blue*/
+  --primary-color: #0074d2; /*blue*/
   --primary-rgb: 66, 165, 245; /*blue*/
   --primary-filter: 29,59,84; /*blue*/
   --accent-color: #EF5350; /*red*/
