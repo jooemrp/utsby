@@ -45,7 +45,11 @@
 
 	<link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen" id="main-style" />
 	<!-- CORE CSS TEMPLATE - END -->
-
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
 	<script>
 		navigator.serviceWorker.register("pwabuilder-adv-sw.js");
 	</script>
@@ -71,11 +75,16 @@
 	<div class="content-area">
 		<div class="center">
 			<div class="spacer-large"></div>
-				<img src="/assets/images/logo-ut.png" style="width: 60%;" alt="Universitas Terbuka Surabaya">
-			<div class="center index-start">
-				<a href="home.html" class="waves-light btn-large bg-primary">
-					Buka Brosur
-				</a>
+			<div class="spacer-large"></div>
+			<img src="/assets/images/logo-ut.png" class="img-fluid" alt="Universitas Terbuka Surabaya">
+			<div class="spacer-large"></div>
+			<p class="display-6">
+				Situs ini hanya dapat diakses menggunakan perangkat mobile, <br>silakan scan QR code berikut untuk
+				masuk.
+			</p>
+			<div class="spacer"></div>
+			<div class="mx-auto w-25">
+				<img src="/assets/images/ut-sby.png" class="img-fluid w-50" alt="Universitas Terbuka Surabaya">
 			</div>
 		</div>
 	</div>
@@ -105,13 +114,6 @@
 	<!-- END CORE TEMPLATE JS - END -->
 
 	<script src="assets/js/preloader.js"></script>
-	<script>
-		const isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-		if (!isMobile) {
-			window.location.href = "oops.html"; // Redirect to a desktop-specific page
-		}
-	</script>
 </body>
 
 </html>
