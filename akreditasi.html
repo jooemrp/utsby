@@ -97,8 +97,7 @@
               <div class="col s12 pad-0">
                 <div class="row ui-mediabox portfolio">
                   <div class="col s6">
-                    <a class="img-wrap round" href="assets/images/why.jpg" data-fancybox="images"
-                      data-caption="">
+                    <a class="img-wrap round" href="assets/images/why.jpg" data-fancybox="images" data-caption="">
                       <img alt="image" class="" style="width: 100%" src="assets/images/why.jpg" />
                     </a>
                   </div>
@@ -220,6 +219,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
+    <script>
+      const isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+      if (!isMobile) {
+        window.location.href = "oops.html"; // Redirect to a desktop-specific page
+      }
+    </script>
 </body>
 
 </html>

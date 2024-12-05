@@ -8,7 +8,6 @@
     <meta content="Universitas Terbuka Surabaya" name="description" />
     <meta content="Sevean Sinestesia" name="author" />
 
-
     <!-- App Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/icons/60.png" />
@@ -140,9 +139,14 @@
     <script src="modules/app/scripts.js"></script>
 
     <!-- END CORE TEMPLATE JS - END -->
-
-
     <script src="assets/js/preloader.js"></script>
+    <script>
+        const isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+        if (!isMobile) {
+            window.location.href = "oops.html"; // Redirect to a desktop-specific page
+        }
+    </script>
 </body>
 
 </html>
